@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home-card {
+  @apply w-full cursor-pointer hover:scale-105 duration-200 flex gap-3 items-center justify-center h-[150px] rounded-xl;
+}
+
+.loading {
+  @apply fixed left-[40%] lg:left-[55%] top-[50%] lg:top-[45%] w-[70px];
+}
+
+.page {
+  @apply flex flex-col lg:flex-row;
+}
+
+.rhap_container {
+  @apply bg-slate-700 h-[80px] text-white !important;
+}
+
+.audio-list {
+  @apply h-[75vh] overflow-y-scroll rounded-xl p-4 lg:p-8 bg-gray-800;
+}
+
+.button {
+  @apply px-4 py-2 rounded-lg font-bold;
+}
+
+.input {
+  @apply block p-4 pl-12 w-full text-sm text-white rounded-xl bg-gray-700;
+}
+
+.rhap_total-time {
+  @apply text-white !important;
+}
+
+.rhap_current-time {
+  @apply text-white !important;
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.marquee:hover {
+  animation: marquee 12s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.playbtn {
+  bottom: 18rem;
+  right: 45%;
+  display: flex !important;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: var(--main-color);
+  font-size: 33px;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      box-shadow: 0 0 0 rgb(255, 180, 58, 0.7);
+  }
+  40% {
+      box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+  }
+  80% {
+      box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 rgb(255, 193, 7, 0);
+  }
+}

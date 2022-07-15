@@ -1,0 +1,13 @@
+ago: "1 month ago"
+author: {name: 'Su', url: 'https://youtube.com/c/Sulovesmusic'}
+description: "SonTungMTP #TheresNoOneAtAll #MTPEntertainment #guitar #cover Cảm ơn mọi người đã lắng nghe! Original: SƠN TÙNG ..."
+duration: {seconds: 163, timestamp: '2:43'}
+image: "https://i.ytimg.com/vi/GBkfJ7NyG7k/hq720.jpg"
+seconds: 163
+thumbnail: "https://i.ytimg.com/vi/GBkfJ7NyG7k/hq720.jpg"
+timestamp: "2:43"
+title: "SƠN TÙNG M-TP | THERE'S NO ONE AT ALL | cover"
+type: "video"
+url: "https://youtube.com/watch?v=GBkfJ7NyG7k"
+videoId: "GBkfJ7NyG7k"
+views: 154991
